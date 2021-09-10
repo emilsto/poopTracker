@@ -1,9 +1,9 @@
 //make x from menuicon, apply animation change
 function xBar(x) {
-    x.classList.toggle("change");
-  } 
+  x.classList.toggle("change");
+}
 
-function fadeOut(){
+function fadeOut() {
   //variables
   let background = document.getElementById("secondaryContent");
   let itemOptions1 = document.getElementById("testObject1");
@@ -18,9 +18,7 @@ function fadeOut(){
   background.classList.toggle("fadeOut");
 
   //make this as above
-  if (menuBox.style.display != "block"){
+  if (menuBox.style.display != "block") {
     menuBox.style.display = "block";
-  }
-  else 
-    menuBox.style.display = "none";
+  } else menuBox.style.display = "none";
 }
