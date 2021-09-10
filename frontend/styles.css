@@ -40,8 +40,8 @@ body {
     margin-top: 50px;
 }
 
-#story {
-    width: 90%;
+#story, #stats-global {
+    width: 70%;
     margin: auto;
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
@@ -49,12 +49,6 @@ body {
     color: rgb(62, 62, 62);
 }
 
-#gulpGulp {
-    display: block;
-    margin: auto;
-    width: 30%;
-    height: auto;
-}
 
 .fadeOut{
     opacity: 20%;
