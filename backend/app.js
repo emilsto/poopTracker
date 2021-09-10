@@ -1,13 +1,17 @@
 const express = require("express");
 const mongoose = require('mongoose');
 const app = express();
+const cors = require('cors');
 require("dotenv/config");
 
-app.use(express.json());
+
 
 
 //import routes from routes
+app.use(express.json());
+app.use(cors());
 const poopsRoute = require('./routes/poops');
+
 
 //middleware
 app.use('/poos', poopsRoute);

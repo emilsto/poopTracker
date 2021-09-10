@@ -1,24 +1,35 @@
 const express = require('express');
 const Poop = require('../models/Poop.js');
 const router = express.Router();
-const Kakka = require('../models/Poop.js');
 
-router.get('/', (req,res) => {
-    res.send("Tervetuloa kakka-arkistoon");
+//get poops from DB
+router.get('/', async (req,res) => {
+    try{
+        const poops = await Poop.find();
+        res.json(poops);
+    } catch{
+        res.json({message : err});
+    }
+    
 });
 
+//send poops
 router.post('/',async (req,res) => {
     const poop = new Poop({
         tunti: req.body.tunti,
         kesto: req.body.kesto
     });
-    poop.save()
-    .then(data => {
-        res.json(data);
-    })
-    .catch(err => {
-        res.json({message: err});
-    });
+    try{
+        const savedPoop = await poop.save()
+        res.json(savedPoop);
+    } catch (err) {
+        res.json({message : err});
+    }
+});
+
+//get a specific poop
+router.get('/poopId', async (req,res) =>{
+    const poopy = await Poop.findById(req.params.postId);
 });
 
 
