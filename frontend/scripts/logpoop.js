@@ -23,25 +23,21 @@ function fadeOut() {
   } else menuBox.style.display = "none";
 }
 
-
-
 const logPoop = async () => {
+  let select = document.getElementById("courses");
+  let tunti = select.options[select.selectedIndex].value;
+  let timeSpent = document.getElementById("length").value;
 
-    let select = document.getElementById("courses");
-    let tunti = select.options[select.selectedIndex].value;
-    let timeSpent = document.getElementById("length").value;
-    
-    
+  let xhr = new XMLHttpRequest();
+  xhr.open("POST", "http://localhost:5000/poos", true);
+  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.send(
+    JSON.stringify({
+      tunti: tunti,
+      kesto: timeSpent,
+    })
+  );
 
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:5000/poos", true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify({
-        tunti: tunti,
-        kesto: timeSpent
-    }));
-
-    alert("kakka logattu!");
-    timeSpent = "";
-
+  alert("kakka logattu!");
+  timeSpent = "";
 };

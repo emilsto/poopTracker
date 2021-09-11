@@ -130,42 +130,40 @@ a:active {
 }
 
 #secondaryContent {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   color: #fff;
   margin-top: 10%;
   width: 100%;
 }
 
-#poop-logger{
-    border: 2px solid black;
-    margin: auto;
-    border-radius: 5px;
-    width: 500px;
-    height: 300px; 
-    background-color: rgb(99, 61, 49);
+#poop-logger {
+  border: 2px solid black;
+  margin: auto;
+  border-radius: 5px;
+  width: 500px;
+  height: 300px;
+  background-color: rgb(99, 61, 49);
 }
 
-#submit-btn{
-    margin-top: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 210px;
-    height: 70px;
-    background-color: rgb(53, 53, 53);
-    border: 2px solid black;
-    border-radius: 5px;
-    cursor: pointer;
+#submit-btn {
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 210px;
+  height: 70px;
+  background-color: rgb(53, 53, 53);
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-
-
-#submit-txt{
-    text-align: center;
-    font-size: 25px;
+#submit-txt {
+  text-align: center;
+  font-size: 25px;
 }
 
-#submit-txt:hover{
-    text-align: center;
-    font-size: 25px;
-    color: rgb(89, 90, 89);
+#submit-txt:hover {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(89, 90, 89);
 }

@@ -30,35 +30,38 @@
       </div>
 
       <section id="secondaryContent">
-
         <div id="poop-logger">
+          <div id="time-selector">
+            <label for="course-select">Valitse ajankohta/kurssi: </label>
+            <select name="course-select" id="courses">
+              <option value="Johdatus tietoverkkoihin">
+                Johdatus tietoverkkoihin
+              </option>
+              <option value="Tietoturvalliset järjestelmät">
+                Tietoturvalliset järjestelmät
+              </option>
+              <option value="Data-analytiikka">Data-analytiikka</option>
+              <option value="Ohjelmistotuotannon tekniikat">
+                Ohjelmistotuotannon tekniikat
+              </option>
+              <option value="Sulautetut järjestelmät">
+                Sulautetut järjestelmät
+              </option>
+              <option value="Linux-pohjaiset käyttöjärjestelmät">
+                Linux-pohjaiset käyttöjärjestelmät
+              </option>
+              <option value="Vapaa-aika">Vapaa-aika</option>
+            </select>
+          </div>
 
-            <div id="time-selector">
-                <label for="course-select">Valitse ajankohta/kurssi: </label>
-                <select name="course-select" id="courses">
-                    <option value="Johdatus tietoverkkoihin">Johdatus tietoverkkoihin</option>
-                    <option value="Tietoturvalliset järjestelmät">Tietoturvalliset järjestelmät</option>
-                    <option value="Data-analytiikka">Data-analytiikka</option>
-                    <option value="Ohjelmistotuotannon tekniikat">Ohjelmistotuotannon tekniikat</option>
-                    <option value="Sulautetut järjestelmät">Sulautetut järjestelmät</option>
-                    <option value="Linux-pohjaiset käyttöjärjestelmät">Linux-pohjaiset käyttöjärjestelmät</option>
-                    <option value="Vapaa-aika">Vapaa-aika</option>
-                  </select>
-            </div>
-            
-            <label for="length">Kesto (minuuttia): </label>
-            <input type="text" id="length" name="fname">
+          <label for="length">Kesto (minuuttia): </label>
+          <input type="text" id="length" name="fname" />
 
-
-            <div id="submit-btn">
-                <p id="submit-txt" onclick="logPoop()">Kirjaa kakka!</p>
-            </div>
-
+          <div id="submit-btn">
+            <p id="submit-txt" onclick="logPoop()">Kirjaa kakka!</p>
+          </div>
         </div>
-
       </section>
-
-
     </section>
   </body>
 </html>
