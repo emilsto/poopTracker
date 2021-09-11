@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover,
+a:active {
+  color: rgb(89, 90, 89);
+  text-decoration: none;
+}
+
+#nav {
+  top: 0;
+  z-index: 9999999;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(99, 61, 49);
+}
+
+#menuContainer {
+  padding: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 400ms;
+}
+
+#logo {
+  width: 15%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+#story,
+#stats-global {
+  width: 70%;
+  margin: auto;
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+  text-align: center;
+  color: rgb(62, 62, 62);
+}
+
+.fadeOut {
+  opacity: 20%;
+  transition: 400ms;
+}
+
+.fadeIn1 {
+  animation: fadeIn 2s;
+}
+
+.fadeIn2 {
+  animation: fadeIn 3s;
+}
+
+.fadeIn3 {
+  animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#testItem {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  left: 0;
+  right: 0;
+  height: 360px;
+  width: 350px;
+  background-color: rgb(99, 61, 49);
+  color: #fff;
+  z-index: 9999;
+  position: absolute;
+  display: none;
+  border: 2px solid black;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.testObject {
+  margin-top: 25%;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+}
+
+.testObject:hover,
+.testObject:active {
+  color: rgb(89, 90, 89);
+  text-decoration: none;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#secondaryContent {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+  width: 40%;
+}
+
+#dataZone {
+  padding-left: 35px;
+}
+
+table,
+th,
+td {
+  border: solid 1px #333;
+  border-collapse: collapse;
+  padding: 2px 3px;
+  width: fit-content;
+}
+th {
+  font-weight: bold;
+}
+#dataTable td,
+#dataTable th {
+  border: 2px solid rgb(65, 65, 65);
+  padding: 8px;
+  width: 300px;
+}
+#dataTable tr:nth-child(even) {
+  background-color: rgb(110, 81, 81);
+}
+#dataTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(99, 61, 49);
+  color: white;
+}
+th,
+td,
+tr {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}

@@ -22,3 +22,24 @@ function fadeOut() {
     menuBox.style.display = "block";
   } else menuBox.style.display = "none";
 }
+
+
+//load stats to main page from DB
+const getPoops = async () => {
+  console.log("Fetching poops...");
+  const response = await fetch("http://localhost:5000/poos");
+  let data = await response.json();
+
+  // get the stats from database to variables
+  let totalTime = 0;
+  for (let i = 0; i < data.length; i++){
+      totalTime = totalTime + data[i].kesto;
+  }
+  let numberOfPoops = data.length;
+  let dataCollectionStart =data[0].date;
+  dataCollectionStart = new Date (dataCollectionStart).toLocaleString().slice(0,10);
+
+  //append stats to html
+  document.getElementById("stats-highlight").innerHTML = "Seuranta aloitettiin " + dataCollectionStart + " ja palveluun on tallennettu " + numberOfPoops + " kakkasessiota, joilla on vietetty yhteensä " + totalTime + " minuuttia."
+
+}; getPoops();

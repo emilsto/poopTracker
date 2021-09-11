@@ -17,7 +17,7 @@ const poopsRoute = require('./routes/poops');
 app.use('/poos', poopsRoute);
 
 
-//routes
+//routes get test
 app.get('/', (req,res) => {
     res.send("Welcome to home dir");
 });

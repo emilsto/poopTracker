@@ -3,6 +3,18 @@ body {
   padding: 0;
 }
 
+a,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover,
+a:active {
+  color: rgb(89, 90, 89);
+  text-decoration: none;
+}
+
 #nav {
   top: 0;
   z-index: 9999999;
@@ -16,10 +28,6 @@ body {
   padding: 20px;
   position: absolute;
   cursor: pointer;
-}
-
-#secondaryContent {
-  margin-top: 120px;
 }
 
 .bar1,
@@ -120,4 +128,49 @@ body {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#secondaryContent {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+  width: 40%;
+}
+
+#dataZone {
+  padding-left: 35px;
+}
+
+table,
+th,
+td {
+  border: solid 1px #333;
+  border-collapse: collapse;
+  padding: 2px 3px;
+  width: fit-content;
+}
+th {
+  font-weight: bold;
+}
+#dataTable td,
+#dataTable th {
+  border: 2px solid rgb(65, 65, 65);
+  padding: 8px;
+  width: 300px;
+}
+#dataTable tr:nth-child(even) {
+  background-color: rgb(110, 81, 81);
+}
+#dataTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(99, 61, 49);
+  color: white;
+}
+th,
+td,
+tr {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
 }
