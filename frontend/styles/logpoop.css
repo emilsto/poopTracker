@@ -87,6 +87,8 @@ a:active {
 
 #testItem {
   position: absolute;
+  z-index: 9999;
+  display: none;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -96,9 +98,6 @@ a:active {
   width: 350px;
   background-color: rgb(99, 61, 49);
   color: #fff;
-  z-index: 9999;
-  position: absolute;
-  display: none;
   border: 2px solid black;
   text-align: center;
   font-size: xx-large;
@@ -131,46 +130,42 @@ a:active {
 }
 
 #secondaryContent {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 250px;
-  width: 40%;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  margin-top: 10%;
+  width: 100%;
 }
 
-#dataZone {
-  padding-left: 35px;
+#poop-logger{
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 5px;
+    width: 500px;
+    height: 300px; 
+    background-color: rgb(99, 61, 49);
 }
 
-table,
-th,
-td {
-  border: solid 1px #333;
-  border-collapse: collapse;
-  padding: 2px 3px;
-  width: fit-content;
+#submit-btn{
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
+    height: 70px;
+    background-color: rgb(53, 53, 53);
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
 }
-th {
-  font-weight: bold;
+
+
+
+#submit-txt{
+    text-align: center;
+    font-size: 25px;
 }
-#dataTable td,
-#dataTable th {
-  border: 2px solid rgb(65, 65, 65);
-  padding: 8px;
-  width: 300px;
-}
-#dataTable tr:nth-child(even) {
-  background-color: rgb(110, 81, 81);
-}
-#dataTable th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: rgb(99, 61, 49);
-  color: white;
-}
-th,
-td,
-tr {
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
+
+#submit-txt:hover{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(89, 90, 89);
 }
