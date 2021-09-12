@@ -29,7 +29,7 @@ const logPoop = async () => {
   let timeSpent = document.getElementById("length").value;
 
   let xhr = new XMLHttpRequest();
-  xhr.open("POST", "http://localhost:5000/poos", true);
+  xhr.open("POST", "http://109.235.71.191:5000/poos", true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.send(
     JSON.stringify({

@@ -2,7 +2,7 @@ console.log("Hello");
 
 const getPoops = async () => {
   console.log("Fetching poops...");
-  const response = await fetch("http://localhost:5000/poos");
+  const response = await fetch("http://109.235.71.191:5000/poos");
   console.log(response);
 
   let data = await response.json();
@@ -15,7 +15,7 @@ const getPoops = async () => {
   //loop to fill the array with wanted data and formatting date to locale
   for (i = 0; i < data.length; i++) {
     let dateHolder = data[i].date;
-    dateHolder = new Date(dateHolder).toLocaleString().slice(0, 17);
+    dateHolder = new Date(dateHolder).toLocaleString([], {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'});
     let tempObj = {
       "KAKKA NRO#": i + 1,
       TUNTI: data[i].tunti,

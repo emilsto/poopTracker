@@ -26,8 +26,9 @@ function fadeOut() {
 //load stats to main page from DB
 const getPoops = async () => {
   console.log("Fetching poops...");
-  const response = await fetch("http://localhost:5000/poos");
+  const response = await fetch("http://109.235.71.191:5000/poos");
   let data = await response.json();
+
 
   // get the stats from database to variables
   let totalTime = 0;
