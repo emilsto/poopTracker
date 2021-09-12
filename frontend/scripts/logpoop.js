@@ -5,7 +5,7 @@ function xBar(x) {
 
 function fadeOut() {
   //variables
-  let background = document.getElementById("secondaryContent");
+  let background = document.getElementById("secondary-content");
   let itemOptions1 = document.getElementById("testObject1");
   let itemOptions2 = document.getElementById("testObject2");
   let itemOptions3 = document.getElementById("testObject3");
@@ -26,7 +26,8 @@ function fadeOut() {
 const logPoop = async () => {
   let select = document.getElementById("courses");
   let tunti = select.options[select.selectedIndex].value;
-  let timeSpent = document.getElementById("length").value;
+  let timeSpent = document.getElementById("time-field").value;
+  let sentSuccess = false;
 
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "http://109.235.71.191:5000/poos", true);
@@ -37,7 +38,10 @@ const logPoop = async () => {
       kesto: timeSpent,
     })
   );
-
-  alert("kakka logattu!");
+  
+  if(timeSpent == "")
+  alert("Jotain meni pieleen!");
+  else
+  alert("Kakka logattu onnistuneesti!");
   timeSpent = "";
 };

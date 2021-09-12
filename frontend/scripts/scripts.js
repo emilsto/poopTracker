@@ -29,7 +29,6 @@ const getPoops = async () => {
   const response = await fetch("http://109.235.71.191:5000/poos");
   let data = await response.json();
 
-
   // get the stats from database to variables
   let totalTime = 0;
   for (let i = 0; i < data.length; i++) {
@@ -37,9 +36,11 @@ const getPoops = async () => {
   }
   let numberOfPoops = data.length;
   let dataCollectionStart = data[0].date;
-  dataCollectionStart = new Date(dataCollectionStart)
-    .toLocaleString()
-    .slice(0, 10);
+  dataCollectionStart = new Date(dataCollectionStart).toLocaleString([], {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+  });
 
   //append stats to html
   document.getElementById("stats-highlight").innerHTML =
