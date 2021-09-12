@@ -1,5 +1,3 @@
-
-
 const getPoops = async () => {
   const response = await fetch("http://109.235.71.191:5000/poos");
 

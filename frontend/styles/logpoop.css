@@ -148,22 +148,20 @@ a:active {
   align-items: inherit;
 }
 
-#courses{
+#courses {
   font-size: large;
   display: block;
   margin-bottom: 30px;
-
 }
 
-.time-spent{
+.time-spent {
   text-align: center;
   display: block;
   width: 320px;
   font-size: large;
-  
 }
 
-#time-field{
+#time-field {
   margin-bottom: 30px;
 }
 
@@ -179,18 +177,15 @@ a:active {
   font-size: x-large;
   cursor: pointer;
 }
-.button:hover, .button:active {
-
+.button:hover,
+.button:active {
   color: rgb(89, 90, 89);
-
 }
 
-#succesfull-log{
+#succesfull-log {
   text-align: center;
   font-size: 32px;
 }
-
-
 
 @media screen and (min-width: 760px) {
   #nav {

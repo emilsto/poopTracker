@@ -38,10 +38,8 @@ const logPoop = async () => {
       kesto: timeSpent,
     })
   );
-  
-  if(timeSpent == "")
-  alert("Jotain meni pieleen!");
-  else
-  alert("Kakka logattu onnistuneesti!");
+
+  if (timeSpent == "") alert("Jotain meni pieleen!");
+  else alert("Kakka logattu onnistuneesti!");
   timeSpent = "";
 };

@@ -39,9 +39,10 @@
       </div>
       <section id="secondary-content">
         <section id="data-logger">
-    
           <div id="time-input">
-            <label for="course-select" class="time-spent">Valitse ajankohta/kurssi</label>
+            <label for="course-select" class="time-spent"
+              >Valitse ajankohta/kurssi</label
+            >
             <select name="course-select" id="courses" class="time-spent">
               <option value="Johdatus tietoverkkoihin">
                 Johdatus tietoverkkoihin
@@ -62,15 +63,18 @@
               <option value="Vapaa-aika">Vapaa-aika</option>
             </select>
             <label for="time-spent" class="time-spent">Käytetty aika</label>
-            <form><input type="text" class="time-spent" id="time-field"></form>
-            <input type="button" class="button" value="Kirjaa kakka &#128169;" onclick="logPoop()">
+            <form>
+              <input type="text" class="time-spent" id="time-field" />
+            </form>
+            <input
+              type="button"
+              class="button"
+              value="Kirjaa kakka &#128169;"
+              onclick="logPoop()"
+            />
           </div>
-          
-
         </section>
-     
       </section>
-
     </section>
   </body>
 </html>
