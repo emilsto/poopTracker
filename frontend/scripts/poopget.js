@@ -17,6 +17,7 @@ const getPoops = async () => {
       minute: "2-digit",
     });
     let tempObj = {
+      KAKKAAJA : data[i].kakkaaja,
       "KAKKA NRO#": i + 1,
       TUNTI: data[i].tunti,
       "KESTO (MIN) ": data[i].kesto,

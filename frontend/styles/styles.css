@@ -3,6 +3,11 @@ body {
   padding: 0;
 }
 
+@font-face {
+  font-family: "Kimberley";
+  src: '../fonts/' format("truetype");
+}
+
 a,
 a:visited {
   text-decoration: none;

@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 
 const PoopSchema = mongoose.Schema({
+  kakkaaja: {
+    type: String,
+    required: true,
+  },
   tunti: {
     type: String,
     required: true,

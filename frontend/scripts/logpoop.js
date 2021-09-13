@@ -27,6 +27,9 @@ const logPoop = async () => {
   let select = document.getElementById("courses");
   let tunti = select.options[select.selectedIndex].value;
   let timeSpent = document.getElementById("time-field").value;
+  let pooper = document.getElementById("who-pooped").value;
+
+
   let sentSuccess = false;
 
   let xhr = new XMLHttpRequest();
@@ -34,6 +37,7 @@ const logPoop = async () => {
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.send(
     JSON.stringify({
+      kakkaaja : kakkaaja,
       tunti: tunti,
       kesto: timeSpent,
     })
