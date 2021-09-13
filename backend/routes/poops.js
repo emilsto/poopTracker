@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
 });
 
 //send poops
-router.post("/", async (req, res) => {
+router.post("/", async (req, res) => { 
   const poop = new Poop({
     kakkaaja: req.body.kakkaaja,
     tunti: req.body.tunti,
